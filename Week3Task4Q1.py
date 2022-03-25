@@ -29,7 +29,6 @@ with open('pokemon.txt', 'w') as text_file:
    for pokemon_number in pokemon_numbers:
        url = 'https://pokeapi.co/api/v2/pokemon/{}'.format(pokemon_number)
        response = requests.get(url)
-       pp(response.status_code)
        pokemon = response.json()
 
 
