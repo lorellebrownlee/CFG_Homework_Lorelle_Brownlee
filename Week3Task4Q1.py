@@ -13,7 +13,7 @@
 import random
 import requests
 import json
-from pprint import pprint as pp
+
 
 #create empty list called 'pokemon_numbers'
 pokemon_numbers = []
@@ -30,6 +30,4 @@ with open('pokemon.txt', 'w') as text_file:
        url = 'https://pokeapi.co/api/v2/pokemon/{}'.format(pokemon_number)
        response = requests.get(url)
        pokemon = response.json()
-
-
        text_file.write(pokemon['name'] + '\n')
