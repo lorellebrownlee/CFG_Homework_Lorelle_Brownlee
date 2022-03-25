@@ -1,0 +1,7 @@
+Question 1
+
+You're having coffee/tea/beverage of your choice with a friend that is learning to program in Python. They're curious about why they would use pip. Explain what pip is and one benefit of using pip.
+
+Answer:
+Pip is a package manager for Python that enables the installation of specific modules which contain code libraries. Code libraries contain pre-written functions for specific purposes.
+One benefit of using pip is that it makes packages easier to install. It prevents the user from having to install relevant compilers and dependencies manually
