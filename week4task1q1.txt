@@ -1,0 +1,31 @@
+Complete definitions for key Git & GitHub terminology
+GIT WORKFLOW FUNDAMENTALS
+·        Working Directory - This is sometimes known as the "working tree". This is a directory that unpacks the index and local repository into files, making them easier to edit. T
+It contains a compressed object database representing the full history of the project being worked on.
+It also contains an index file which links the history of the project to the current contents of the tree (or branches of the project), as well as labelled pointers
+into the history, which include tags and branch heads. It effectively works as a sandbox, where changes can be tried out before they are committed to the index or staging area.
+·        Staging Area - this is also known as the index. A git add will move files from the working directory to  here. This is the proposed next commit. While working, it is filled with a list of all the file contents that were most recently
+checked out into the working directory, and has information on what form they took at the time when they were originally checked out.
+·        Local Repo (head) - This is a repository that is stored on your computer. After a git commit, files move from the staging area to the local repository.
+·        Remote repo (master) - This is a repository that is stored on a remote computer. After a git push, files will move from the local repository to the remote repository.
+
+WORKING DIRECTORY STATES:
+·        Staged - This is a file state that is either newly created and not present in the most recent commit, or it has been modified and the user has instructed the new version to be included in the next commit.
+Git add is the command used to add files to the staged state. Untracked and modified files can be added to this state.
+·        Modified - This file state means changes have been made to a file, but it has not been committed yet. The changes may include adding, modifying or deleting file contents.
+Modified files will be included in the next commit in their new form.
+·        Committed - This file state means that any changes to the file are stored in the Git directory. Git commit is the command used to bring files to the committed state.
+This will create a snapshot of the file information and will include information on the changes made to the file.
+
+GIT COMMANDS:
+·        Git add - this command adds a change to the staging directory or index from the working directory. The command informs marks the new file or changed file for inclusion in
+the next commit. Changes added can even include whole file deletions.
+·        Git commit - this command creates a snapshot of the state of the user's current repository. The commit snapshots are detailed logically and over time they collectively
+tell a history of how the repository came to take its current form. Commits include metadata such as author and timestamp, to help create this history.
+·        Git push - this command uploads all of the commits on local branch to the corresponding branch on the remote repository. Effectively, it means publishing changes to the remote repository.
+You should always try to use the command git status before using git push, to confirm what branch you are on before pushing to the remote repository.
+·        Git fetch - This command tells the local repository to update the remote tracking branches. It will not update your current working branch of your local repository with new commits from the remote tracking branch,
+so it is often encouraged to use git merge first to avoid conflicts.
+·        Git merge - This command updates your current working branch of your local repository with any new commits from the remote tracking branch.
+·        Git pull - this command updates the current working branch of your local repository with all of the tracked changes on the corresponding remote branches in the
+remote repository. It also updates all of the corresponding remote tracking branches. It is effectively a combination of the commands git fetch and git merge.
