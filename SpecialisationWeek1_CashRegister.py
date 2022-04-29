@@ -1,63 +1,19 @@
 
-
-
-
 """
-
-
-
-
-
-
-
 
 TASK 1
 
-
-
-
-
-
 Write a class to represent a Cash Register.
-
-
 You class should keep the state of price total and purchased items
 
-
-
-
-
-
 Below is a starter code:
-
-
 ------------------------
-
-
 1. you can add new variables and function if you want to
-
-
 2. you will NEED to add accepted method parameters where required.
-
-
 For example, method add_item probably accepts some kind of an item?..
-
-
 3. You will need to write some examples of how your code works.
 
-
-
-
-
-
 """
-
-
-
-
-
-
-
 
 class CashRegister:
 
@@ -82,7 +38,6 @@ class CashRegister:
        elif more_items == 'X':
            self.reset_register()
 
-
    #remove an item from the list
    def remove_item(self):
        removed_item = input('What item would you like to remove?')
@@ -97,7 +52,6 @@ class CashRegister:
            self.show_items()
        elif next_step == 'X':
            self.reset_register()
-
 
    # multiply total by discount as % and subtract this from total
    def apply_discount(self):
