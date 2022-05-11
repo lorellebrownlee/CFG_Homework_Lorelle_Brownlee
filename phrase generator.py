@@ -45,6 +45,6 @@ def generate_phrase(characters, phrase):
         return True
 
 #driver code    
-print(generate_phrase('cbacba', ''))
+print(generate_phrase('cbacba', 'aabbccc'))
 
 #output: False
